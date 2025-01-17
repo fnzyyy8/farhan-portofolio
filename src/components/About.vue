@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <div class="d-flex justify-content-center align-items-center h-100">
+  <main>
     <h1>About Page</h1>
-  </div>
+  </main>
 </template>
 
 <style scoped>

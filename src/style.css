@@ -1,8 +1,21 @@
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 
 
 }
-*{
-    font-family: "Clash Display Variable", serif;
+
+@font-face {
+    font-family: "Clash Display Variable";
+    src: url("/font/ClashDisplay-Variable.ttf") format('truetype');
+    font-display: swap;
+}
+
+* {
+
+    font-family: "Clash Display Variable", sans-serif;
+
+}
+
+.router{
+    padding-top: 75px;
 }
