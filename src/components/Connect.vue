@@ -19,7 +19,7 @@ const links = [
       <h1>Connect With me</h1>
       <div class=" mt-3">
         <template v-for="link in links">
-          <a class="link-connect" :href="link.href" target="_blank">
+          <a class="link-connect" data-aos="fade-up" data-aos-delay="2s" :href="link.href" target="_blank">
             <div class="connect-style bg-light text-dark p-3 rounded-3 mb-3 fw-semibold">{{ link.text }}</div>
           </a>
         </template>

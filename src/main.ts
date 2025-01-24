@@ -1,14 +1,15 @@
 import {createApp} from 'vue'
 
+
 import App from './App.vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import "bootstrap/dist/js/bootstrap.bundle.js"
 import 'aos/dist/aos.css'
 import AOS from 'aos'
 import {createRouter, createWebHistory} from "vue-router";
-import Home from "./components/Home.vue";
-import About from "./components/About.vue";
-import Feedback from "./components/Feedback.vue";
+import Home from "./components/Home Page/Home.vue";
+import About from "./components/About Page/About.vue";
+import Feedback from "./components/Feedback Page/Feedback.vue";
 import Connect from './components/Connect.vue';
 
 const app = createApp(App)
@@ -29,7 +30,7 @@ const router = createRouter({
             meta: {hideLayout: true}
         },
         {
-            path: "/connect",
+            path: "/contact",
             component: Connect,
             meta: {hideLayout: true}
         }
@@ -40,6 +41,7 @@ const router = createRouter({
 AOS.init({
     startEvent: 'load'
 })
+
 
 app.use(router)
 
